@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection"
+import AboutSection from "@/components/AboutSection"
 import { TextGradientScroll } from "@/components/ui/text-gradient-scroll"
 import { Timeline } from "@/components/ui/timeline"
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials"
@@ -7,34 +8,34 @@ import SmoothScrollHero from "@/components/ui/smooth-scroll-hero"
 
 export default function Index() {
   const missionStatement =
-    "Мы не просто бегаем. Мы меняем себя — асфальт под ногами, ветер в лицо, сердце на пределе. Stride Collective объединяет тех, кто выбирает дискомфорт ради роста, рассветы ради ясности ума и километры ради того, чтобы жить по-настоящему. Здесь нет «слишком медленно» и «слишком поздно начинать». Есть только следующий шаг — и мы делаем его вместе. Беговое племя, которое не сдаётся."
+    "Я прошла путь от ковра до кабинета психолога — и это даёт мне то, чего нет у большинства специалистов: я понимаю спортсмена изнутри. Знаю, что такое давление старта, страх проигрыша и пустота после победы. Мой подход соединяет доказательную психологию и реальный спортивный опыт. Здесь нет лишних слов — только практические инструменты, которые работают прямо на соревнованиях, тренировках и в жизни."
 
   const timelineEntries = [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RJ3iTXUn5SUexF6nHMZYhMoQLNCboK.png",
-      alt: "Бегунья в художественном размытии движения",
-      title: "Каждый шаг важен",
+      image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&q=80",
+      alt: "Борец на соревнованиях",
+      title: "Работа с командами",
       description:
-        "От первой пробежки вокруг дома до сотого марафона — у каждого бегуна своя история. В Stride Collective мы чествуем новичков, которые впервые шнуруют кроссовки. Твой темп не важен — важна твоя страсть. Чего ты ждешь?",
+        "С 2021 года провожу психологическую подготовку профессиональных команд. Групповые тренинги, работа с командной динамикой, управление конфликтами и формирование единого духа — всё это даёт реальный результат на соревнованиях.",
       layout: "left" as const,
     },
     {
       id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LN9OPh9hw0b9rwSPRSslHoejcfoKHe.png",
-      alt: "Бегун с решимостью и концентрацией",
-      title: "Найди свой ритм",
+      image: "https://images.unsplash.com/photo-1517438476312-10d79c077509?w=800&q=80",
+      alt: "Спортивный психолог на тренировке",
+      title: "Индивидуальные сессии",
       description:
-        "Гонишься за личными рекордами или просто встречаешь рассвет на бегу — наше сообщество принимает каждого. От спринтеров до любителей медленного бега, от трейлраннеров до звезд стадиона — здесь найдется место для тебя. Вопрос один: чего ты ждешь?",
+        "Работаю с тревогой соревнований, выгоранием, восстановлением после травм и психологических кризисов. Каждый спортсмен получает персональный план работы с конкретными инструментами и измеримым результатом.",
       layout: "right" as const,
     },
     {
       id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1FdGyjVpWQANGzsDWpoPIvF5SVI2za.png",
-      alt: "Бегун в динамике, демонстрирующий силу и грацию",
-      title: "Стань частью движения",
+      image: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=800&q=80",
+      alt: "Онлайн тренинг и обучение",
+      title: "Онлайн-курсы и тренинги",
       description:
-        "Бег — это не только километры, это моменты. Утренние разговоры, общие трудности, коллективные победы. В Stride Collective ты вступаешь не просто в группу — ты становишься частью семьи. Зашнуруй кроссовки, выйди на старт и открой, на что ты способен. Серьезно, чего ты ждешь?",
+        "Записанные курсы по ментальной устойчивости и управлению стрессом доступны в любое время. Живые воркшопы для групп — интенсивный формат с практическими техниками, которые можно применить уже на следующей тренировке.",
       layout: "left" as const,
     },
   ]
@@ -44,14 +45,16 @@ export default function Index() {
       {/* Hero Section */}
       <HeroSection />
 
+      {/* About Section with Tabs */}
+      <AboutSection />
+
       {/* Mission Statement Section with Grid Background */}
       <section id="mission" className="relative min-h-screen flex items-center justify-center py-20 bg-white">
-        {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">НАША МИССИЯ</h2>
+            <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-12 text-gray-900">МОЙ ПОДХОД</h2>
             <TextGradientScroll
               text={missionStatement}
               className="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed text-gray-800"
@@ -64,15 +67,14 @@ export default function Index() {
 
       {/* Timeline Section */}
       <section id="community" className="relative py-20 bg-white">
-        {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
 
         <div className="relative z-10">
           <div className="container mx-auto px-6 mb-16">
             <div className="text-center">
-              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">МЫ РАДЫ КАЖДОМУ</h2>
+              <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 text-gray-900">КАК Я РАБОТАЮ</h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-                У каждого бегуна свой путь. Вот лишь несколько историй из нашего открытого сообщества.
+                Три направления работы — для атлетов любого уровня: от новичков до профессионалов.
               </p>
             </div>
           </div>
@@ -83,7 +85,6 @@ export default function Index() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="relative py-20 bg-white">
-        {/* Subtle Grid Pattern */}
         <div className="absolute inset-0 bg-grid-subtle opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-6 relative z-10">
@@ -95,11 +96,11 @@ export default function Index() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-6xl font-black tracking-wider text-gray-900 mb-6">
-              Что говорят наши{" "}
-              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">БЕГУНЫ</span>
+              Что говорят{" "}
+              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">СПОРТСМЕНЫ</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-              Реальные истории от реальных бегунов, которые нашли свой ритм вместе со Stride Collective.
+              Реальные результаты спортсменов, с которыми я работала с 2021 года.
             </p>
           </motion.div>
 
