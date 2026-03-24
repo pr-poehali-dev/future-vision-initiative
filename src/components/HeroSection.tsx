@@ -112,7 +112,8 @@ export default function HeroSection() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-2 text-gray-200">Мастер спорта по дзюдо и самбо</p>
+          <p className="text-xl md:text-2xl font-light tracking-wide mb-2 text-gray-200">Монкина Дарья Алексеевна</p>
+          <p className="text-base md:text-lg font-light tracking-wide mb-2 text-gray-300">Мастер спорта по дзюдо и самбо</p>
           <p className="text-base md:text-lg font-light tracking-wide mb-8 text-gray-300">Помогаю спортсменам раскрыть ментальный потенциал и достигать результатов</p>
 
           {/* CTA Button - Now using LiquidButton */}

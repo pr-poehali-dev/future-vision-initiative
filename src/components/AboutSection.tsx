@@ -130,9 +130,10 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-black tracking-wider text-white mb-4">
+          <h2 className="text-4xl md:text-6xl font-black tracking-wider text-white mb-2">
             ОБО МНЕ
           </h2>
+          <p className="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Монкина Дарья Алексеевна</p>
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
             Спортивный психолог с собственным опытом большого спорта. Знаю, каково это — выходить на ковёр и побеждать.
           </p>
