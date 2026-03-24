@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection"
 import AboutSection from "@/components/AboutSection"
+import PricingSection from "@/components/PricingSection"
 import { TextGradientScroll } from "@/components/ui/text-gradient-scroll"
 import { Timeline } from "@/components/ui/timeline"
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials"
@@ -82,6 +83,9 @@ export default function Index() {
           <Timeline entries={timelineEntries} />
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <PricingSection />
 
       {/* Testimonials Section */}
       <section id="testimonials" className="relative py-20 bg-white">
