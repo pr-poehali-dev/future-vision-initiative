@@ -27,7 +27,7 @@ export default function HeroSection() {
     { name: "Подход", href: "#mission" },
     { name: "Услуги", href: "#pricing" },
     { name: "Отзывы", href: "#testimonials" },
-    { name: "Записаться", href: "#join" },
+    { name: "Контакты", href: "#contacts" },
   ]
 
   // Navigation handlers
