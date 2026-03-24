@@ -12,9 +12,26 @@ const placeholderDiplomas: Diploma[] = [
   { id: 1, src: "", title: "Специалист по физической культуре и спорту" },
   { id: 2, src: "", title: "Психолог-консультант" },
   { id: 3, src: "", title: "Спортивный психолог" },
-  { id: 4, src: "", title: "Психологическое консультирование в области спорта" },
-  { id: 5, src: "", title: "Работа с травматичным опытом (ПТСР)" },
-  { id: 6, src: "", title: "Метафорические ассоциативные карты" },
+  {
+    id: 4,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/d9ee3048-1531-4bd2-8a1d-a6fb7ed1711f.jpg",
+    title: "Психологическое консультирование в области спорта",
+  },
+  {
+    id: 5,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/ac1b43db-6e5f-421f-9c91-7f972e0ededf.jpg",
+    title: "Работа с травматичным опытом (ПТСР)",
+  },
+  {
+    id: 6,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/74965ba4-a9fd-47e7-855d-994736b4b923.jpg",
+    title: "Метафорические ассоциативные карты (МАК)",
+  },
+  {
+    id: 7,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/1d1ebec9-f9d1-445f-b07d-aad8e7d2b2c8.jpg",
+    title: "Провокативная и парадоксальная психотерапия",
+  },
 ]
 
 export default function DiplomasSection() {
