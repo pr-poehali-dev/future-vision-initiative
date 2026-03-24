@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection"
 import AboutSection from "@/components/AboutSection"
+import DiplomasSection from "@/components/DiplomasSection"
 import PricingSection from "@/components/PricingSection"
 import { TextGradientScroll } from "@/components/ui/text-gradient-scroll"
 import { Timeline } from "@/components/ui/timeline"
@@ -48,6 +49,9 @@ export default function Index() {
 
       {/* About Section with Tabs */}
       <AboutSection />
+
+      {/* Diplomas + Psychodiagnostics */}
+      <DiplomasSection />
 
       {/* Mission Statement Section with Grid Background */}
       <section id="mission" className="relative min-h-screen flex items-center justify-center py-20 bg-white">
