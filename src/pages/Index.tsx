@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection"
+import FooterSection from "@/components/FooterSection"
 import AboutSection from "@/components/AboutSection"
 import DiplomasSection from "@/components/DiplomasSection"
 import PricingSection from "@/components/PricingSection"
@@ -28,7 +29,7 @@ export default function Index() {
       alt: "Спортивный психолог на тренировке",
       title: "Индивидуальные сессии",
       description:
-        "Работаю с тревогой соревнований, выгоранием, восстановлением после травм и психологических кризисов. Каждый спортсмен получает персональный план работы с конкретными инструментами и измеримым результатом.",
+        "Работаю со спортсменами и тренерами: тревога соревнований, выгорание, восстановление после травм, профессиональные кризисы. Тренеры приходят, чтобы прокачать управленческие навыки, выстроить контакт с командой и не сгореть в профессии. Каждый получает персональный план с конкретными инструментами и измеримым результатом.",
       layout: "right" as const,
     },
     {
@@ -135,6 +136,8 @@ export default function Index() {
           finalClipPercentage={70}
         />
       </section>
+
+      <FooterSection />
     </div>
   )
 }
