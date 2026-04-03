@@ -16,7 +16,7 @@ export default function HeroSection() {
       alt: "Бойцы ММА на ринге",
     },
     {
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/b18b4758-4cc9-47a1-8db7-d16531844740.jpg",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/1bd40360-9a05-48c1-8bfd-08c92bfd97ea.jpg",
       alt: "Дети спортсмены с тренером",
     },
   ]
