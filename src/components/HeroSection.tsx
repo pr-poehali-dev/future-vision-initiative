@@ -8,16 +8,16 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-j46TPXDHzpn3M65wMva3qHPNhwokYn.png",
-      alt: "Группа бегунов в движении",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/be6b7535-2a26-4b50-b10f-714fa32697f5.jpg",
+      alt: "Спортсмены единоборств в движении",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oH2K0gw1HEqvYhhbwJrYbmkBrbksyk.png",
-      alt: "Бегунья с эффектом размытия",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/c4e1e338-52ba-4dea-bfe2-30ded8842ac5.jpg",
+      alt: "Дзюдоист бросает соперника",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQ2brNc5Vszxllx17YNA6JqGqiHaRm.png",
-      alt: "Бегун во главе группы",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/fad3b903-bee5-4122-b5e8-fc79938b93fd.jpg",
+      alt: "Борцы самбо на соревнованиях",
     },
   ]
 
