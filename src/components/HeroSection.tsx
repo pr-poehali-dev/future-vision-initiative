@@ -8,7 +8,7 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/016d7a21-bf08-40fa-bcc8-ec8cb8a2ed59.jpg",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/0304c8db-f015-40ef-921d-eee622171178.jpg",
       alt: "Бегуны на стадионе",
     },
     {
@@ -16,7 +16,7 @@ export default function HeroSection() {
       alt: "Бойцы ММА на ринге",
     },
     {
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/1bd40360-9a05-48c1-8bfd-08c92bfd97ea.jpg",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/80e8d377-a619-4d28-a856-873daa0a53f8.jpg",
       alt: "Дети спортсмены с тренером",
     },
   ]
