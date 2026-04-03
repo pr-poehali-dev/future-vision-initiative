@@ -8,16 +8,16 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/be6b7535-2a26-4b50-b10f-714fa32697f5.jpg",
-      alt: "Спортсмены единоборств в движении",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/016d7a21-bf08-40fa-bcc8-ec8cb8a2ed59.jpg",
+      alt: "Бегуны на стадионе",
     },
     {
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/c4e1e338-52ba-4dea-bfe2-30ded8842ac5.jpg",
-      alt: "Дзюдоист бросает соперника",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/f03155fd-841f-446b-9b21-c90fea58d451.jpg",
+      alt: "Бойцы ММА на ринге",
     },
     {
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/fad3b903-bee5-4122-b5e8-fc79938b93fd.jpg",
-      alt: "Борцы самбо на соревнованиях",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/files/b18b4758-4cc9-47a1-8db7-d16531844740.jpg",
+      alt: "Дети спортсмены с тренером",
     },
   ]
 
@@ -52,7 +52,7 @@ export default function HeroSection() {
         }}
       >
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
       {/* Navigation */}
