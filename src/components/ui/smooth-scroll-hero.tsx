@@ -129,8 +129,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                     <Calendar className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">3+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Года практики</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">5+</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Лет практики</div>
               </div>
 
               <div className="text-center">
