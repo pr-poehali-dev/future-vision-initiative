@@ -157,8 +157,9 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
               <p className="text-xs text-gray-400 mb-3 font-medium">ДОВЕРЯЮТ ПРОФЕССИОНАЛЬНЫЕ СПОРТСМЕНЫ И КОМАНДЫ</p>
               <div className="flex flex-wrap justify-center items-center gap-4 text-gray-300">
                 <span className="text-xs font-semibold">МАСТЕР СПОРТА</span>
-                <span className="text-xs font-semibold">4 ПЕРЕПОДГОТОВКИ</span>
-                <span className="text-xs font-semibold">ОНЛАЙН И ОФЛАЙН</span>
+                <span className="text-xs font-semibold">3 ПЕРЕПОДГОТОВКИ</span>
+                <span className="text-xs font-semibold">ОНЛАЙН — ИЗ ЛЮБОЙ ТОЧКИ</span>
+                <span className="text-xs font-semibold">ОФЛАЙН</span>
                 <span className="text-xs font-semibold">С 2021 ГОДА</span>
               </div>
             </div>
