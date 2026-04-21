@@ -273,7 +273,36 @@ export default function PricingSection() {
             </p>
           </motion.div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+          {/* Запись на консультацию */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            viewport={{ once: true }}
+            className="flex justify-center mb-10"
+          >
+            <a
+              href="https://t.me/m_dasha_psy?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BF%D0%B0%D1%81%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-white text-gray-900 px-10 py-5 text-lg font-black tracking-wide hover:bg-gray-100 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <Icon name="Send" size={22} className="text-gray-900" fallback="Send" />
+              Записаться на консультацию
+            </a>
+          </motion.div>
+
+          {/* Каналы */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-center text-xs font-bold tracking-widest text-gray-500 uppercase mb-4"
+          >
+            Мои каналы
+          </motion.p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-xl mx-auto mb-12">
             {/* MAX */}
             <motion.a
               href={MAX_LINK}
@@ -281,11 +310,11 @@ export default function PricingSection() {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
               viewport={{ once: true }}
-              className="flex items-center gap-3 bg-[#6B3FD4] hover:bg-[#5a33b8] text-white px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+              className="flex items-center gap-2 bg-[#6B3FD4] hover:bg-[#5a33b8] text-white px-6 py-3 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
             >
-              <Icon name="MessageCircle" size={20} className="text-white" fallback="MessageCircle" />
+              <Icon name="MessageCircle" size={18} className="text-white" fallback="MessageCircle" />
               MAX
             </motion.a>
 
@@ -296,11 +325,11 @@ export default function PricingSection() {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.15 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="flex items-center gap-3 bg-[#4680C2] hover:bg-[#3a6fad] text-white px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+              className="flex items-center gap-2 bg-[#4680C2] hover:bg-[#3a6fad] text-white px-6 py-3 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
             >
-              <Icon name="Users" size={20} className="text-white" fallback="Users" />
+              <Icon name="Users" size={18} className="text-white" fallback="Users" />
               ВКонтакте
             </motion.a>
 
@@ -311,27 +340,31 @@ export default function PricingSection() {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="flex items-center gap-3 bg-[#FF6C2F] hover:bg-[#e55a1f] text-white px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
-            >
-              <Icon name="BookOpen" size={20} className="text-white" fallback="BookOpen" />
-              Дзен
-            </motion.a>
-
-            {/* Phone */}
-            <motion.a
-              href={`tel:${PHONE}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
               viewport={{ once: true }}
-              className="flex items-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+              className="flex items-center gap-2 bg-[#FF6C2F] hover:bg-[#e55a1f] text-white px-6 py-3 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
             >
-              <Icon name="Phone" size={20} className="text-gray-900" fallback="Phone" />
-              {PHONE_DISPLAY}
+              <Icon name="BookOpen" size={18} className="text-white" fallback="BookOpen" />
+              Дзен
             </motion.a>
           </div>
+
+          {/* Phone */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <a
+              href={`tel:${PHONE}`}
+              className="flex items-center gap-2 text-gray-500 hover:text-gray-300 transition-colors duration-300 text-sm"
+            >
+              <Icon name="Phone" size={15} className="text-gray-500" fallback="Phone" />
+              {PHONE_DISPLAY}
+            </a>
+          </motion.div>
         </div>
       </section>
     </>
