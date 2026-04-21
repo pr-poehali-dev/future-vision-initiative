@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon"
 
 const TG_LINK = "https://t.me/DM_sport_psy"
 const VK_LINK = "https://vk.com/psiholog.monkina"
+const DZEN_LINK = "https://dzen.ru/id/6836c21c810bfa7e87dc63f7"
 const PHONE = "89135798927"
 const PHONE_DISPLAY = "+7 (913) 579-89-27"
 
@@ -303,12 +304,27 @@ export default function PricingSection() {
               ВКонтакте
             </motion.a>
 
+            {/* Dzen */}
+            <motion.a
+              href={DZEN_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="flex items-center gap-3 bg-[#FF6C2F] hover:bg-[#e55a1f] text-white px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+            >
+              <Icon name="BookOpen" size={20} className="text-white" fallback="BookOpen" />
+              Дзен
+            </motion.a>
+
             {/* Phone */}
             <motion.a
               href={`tel:${PHONE}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.25 }}
               viewport={{ once: true }}
               className="flex items-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
             >
