@@ -229,7 +229,7 @@ export default function PricingSection() {
 
                 {/* CTA Button */}
                 <a
-                  href={TG_LINK}
+                  href={MAX_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`mt-auto block text-center py-3 px-6 text-sm font-bold tracking-wide transition-all duration-300 ${
