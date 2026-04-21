@@ -168,7 +168,7 @@ export default function DiplomasSection() {
                 ))}
               </ul>
               <a
-                href="https://t.me/DM_sport_psy"
+                href="https://max.ru/join/X07HQy97p_guJSJNTn-0E1inWw9SbaR95WJoVG1dYsc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white text-gray-900 px-8 py-4 font-bold tracking-wide hover:bg-gray-100 transition-all duration-300"

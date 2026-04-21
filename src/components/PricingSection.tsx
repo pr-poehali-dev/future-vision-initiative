@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Icon from "@/components/ui/icon"
 
-const TG_LINK = "https://t.me/DM_sport_psy"
+const MAX_LINK = "https://max.ru/join/X07HQy97p_guJSJNTn-0E1inWw9SbaR95WJoVG1dYsc"
 const VK_LINK = "https://vk.com/psiholog.monkina"
 const DZEN_LINK = "https://dzen.ru/id/6836c21c810bfa7e87dc63f7"
 const PHONE = "89135798927"
@@ -274,19 +274,19 @@ export default function PricingSection() {
           </motion.div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
-            {/* Telegram */}
+            {/* MAX */}
             <motion.a
-              href={TG_LINK}
+              href={MAX_LINK}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="flex items-center gap-3 bg-[#229ED9] hover:bg-[#1a8bbf] text-white px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+              className="flex items-center gap-3 bg-[#6B3FD4] hover:bg-[#5a33b8] text-white px-8 py-4 font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto justify-center"
             >
-              <Icon name="Send" size={20} className="text-white" fallback="Send" />
-              Telegram
+              <Icon name="MessageCircle" size={20} className="text-white" fallback="MessageCircle" />
+              MAX
             </motion.a>
 
             {/* VK */}
