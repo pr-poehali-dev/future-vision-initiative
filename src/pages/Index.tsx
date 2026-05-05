@@ -16,8 +16,8 @@ export default function Index() {
   const timelineEntries = [
     {
       id: 1,
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/04bc9a56-108c-45f8-aa30-7faa5acaab59.jpg",
-      alt: "Победа на соревнованиях по самбо",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/1af4d191-518e-4777-97ce-5338e8598ff3.jpg",
+      alt: "Команда дзюдоистов в зале",
       title: "Работа с командами",
       description:
         "С 2021 года провожу психологическую подготовку профессиональных команд. Групповые тренинги, работа с командной динамикой, управление конфликтами и формирование единого духа — всё это даёт реальный результат на соревнованиях.",
@@ -26,8 +26,8 @@ export default function Index() {
     },
     {
       id: 2,
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/c55b894b-25dd-4ff7-adb2-42d2ac25b9f9.jpg",
-      alt: "Команда дзюдо на тренировке",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/22462808-fc59-4fe3-8793-6e0dd632a442.jpg",
+      alt: "Боец MMA взвешивание ACA",
       title: "Индивидуальные сессии",
       description:
         "Работаю со спортсменами и тренерами: тревога соревнований, выгорание, восстановление после травм, профессиональные кризисы. Тренеры приходят, чтобы прокачать управленческие навыки, выстроить контакт с командой и не сгореть в профессии. Каждый получает персональный план с конкретными инструментами и измеримым результатом.",
@@ -36,23 +36,23 @@ export default function Index() {
     },
     {
       id: 3,
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/22462808-fc59-4fe3-8793-6e0dd632a442.jpg",
-      alt: "Боец MMA на соревнованиях ACA",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/3740d9a0-2809-4328-a3ca-8ea98fd1b270.jpg",
+      alt: "Победа на соревнованиях по самбо — рука поднята",
       title: "Онлайн-курсы и тренинги",
       description:
         "Записанные курсы по ментальной устойчивости и управлению стрессом доступны в любое время. Живые воркшопы для групп — интенсивный формат с практическими техниками, которые можно применить уже на следующей тренировке.",
       layout: "left" as const,
-      objectPosition: "top center",
+      objectPosition: "center center",
     },
     {
       id: 4,
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/1af4d191-518e-4777-97ce-5338e8598ff3.jpg",
-      alt: "Команда дзюдоистов в зале",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/04bc9a56-108c-45f8-aa30-7faa5acaab59.jpg",
+      alt: "Победа RCC MMA — спортсмен с поднятой рукой",
       title: "Работа с тренерами и родителями",
       description:
         "8 лет я была тренером — поэтому понимаю выгорание, ответственность за чужой результат и сложность выстраивания контакта с атлетом. Также работаю с родителями детей-спортсменов: помогаю поддерживать, а не давить, быть рядом без лишней тревоги.",
       layout: "right" as const,
-      objectPosition: "top center",
+      objectPosition: "30% center",
     },
   ]
 

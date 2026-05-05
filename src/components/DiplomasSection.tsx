@@ -14,16 +14,19 @@ const placeholderDiplomas: Diploma[] = [
     id: 1,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/d30e8938-b067-4dc4-8670-7a1815634810.jpg",
     title: "Диплом о среднем профессиональном образовании. Педагог по физической культуре и спорту, 2015",
+    rotate: true,
   },
   {
     id: 2,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/1e040aed-7fc5-40d6-aff3-bdd0d8eea474.jpg",
     title: "Диплом о профессиональной переподготовке. Психолог-консультант, 2023",
+    rotate: true,
   },
   {
     id: 3,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/760a6efd-e6ec-4b59-b76a-e24bc9631b57.jpg",
     title: "Диплом о профессиональной переподготовке. Спортивный психолог, 2026",
+    rotate: true,
   },
   {
     id: 4,
@@ -34,30 +37,28 @@ const placeholderDiplomas: Diploma[] = [
     id: 5,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/f2cc8d56-a63a-47ac-b95b-a861f4a85976.jpg",
     title: "Удостоверение о повышении квалификации. Работа с травматичным опытом (ПТСР), 2023",
+    rotate: true,
   },
   {
     id: 6,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/3de6c13a-b483-407f-8159-0feeb8c8bd26.jpg",
     title: "Удостоверение о повышении квалификации. Метафорические ассоциативные карты (МАК), 2022",
+    rotate: true,
   },
   {
     id: 7,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/73d8fe2e-a271-4a69-a02f-76213f9f2e90.jpg",
     title: "Свидетельство. Провокативная и парадоксальная психотерапия, 2025",
+    rotate: true,
   },
   {
     id: 8,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/9661b697-ecf2-41ce-974a-2d97438a0d7c.jpg",
     title: "Удостоверения Мастер спорта России по самбо и дзюдо",
-  },
-  {
-    id: 9,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/0627a732-4947-4728-97b0-6627e13cb330.jpg",
-    title: "Сертификат. Панельная дискуссия «Женщина и спорт: особенности тренировочного процесса», 2025",
     rotate: true,
   },
   {
-    id: 10,
+    id: 9,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/8e97102d-dfc8-4742-87d9-4697770230c8.jpg",
     title: "Сертификат. Панельная дискуссия «Женщина и спорт: особенности тренировочного процесса», 21.08.2025",
     rotate: true,
@@ -86,7 +87,7 @@ export default function DiplomasSection() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
             {placeholderDiplomas.map((diploma, index) => (
               <motion.div
                 key={diploma.id}
@@ -95,31 +96,29 @@ export default function DiplomasSection() {
                 transition={{ duration: 0.4, delay: index * 0.06 }}
                 viewport={{ once: true }}
                 onClick={() => diploma.src && setLightbox(diploma)}
-                className={`group relative border-2 border-dashed border-gray-200 bg-gray-50 flex flex-col items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md aspect-[3/4] ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
+                className={`group relative border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md aspect-[4/3] ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
               >
                 {diploma.src ? (
                   diploma.rotate ? (
-                    <div className="w-full h-full flex items-center justify-center overflow-hidden">
+                    <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
                       <img
                         src={diploma.src}
                         alt={diploma.title}
                         style={{
-                          transform: "rotate(90deg)",
-                          width: "133%",
-                          height: "133%",
+                          transform: "rotate(90deg) scale(1.35)",
+                          width: "100%",
+                          height: "100%",
                           objectFit: "cover",
                           filter: "contrast(1.05) saturate(0.9) brightness(0.97)",
                           transition: "transform 0.5s",
-                          flexShrink: 0,
                         }}
-                        className="group-hover:scale-105"
                       />
                     </div>
                   ) : (
                   <img
                     src={diploma.src}
                     alt={diploma.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     style={{ filter: "contrast(1.05) saturate(0.9) brightness(0.97)" }}
                   />
                   )
