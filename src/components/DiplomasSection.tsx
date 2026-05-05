@@ -95,15 +95,34 @@ export default function DiplomasSection() {
                 transition={{ duration: 0.4, delay: index * 0.06 }}
                 viewport={{ once: true }}
                 onClick={() => diploma.src && setLightbox(diploma)}
-                className={`group relative border-2 border-dashed border-gray-200 bg-gray-50 flex flex-col items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md ${diploma.rotate ? "aspect-[4/3]" : "aspect-[3/4]"} ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
+                className={`group relative border-2 border-dashed border-gray-200 bg-gray-50 flex flex-col items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md aspect-[3/4] ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
               >
                 {diploma.src ? (
+                  diploma.rotate ? (
+                    <div className="w-full h-full flex items-center justify-center overflow-hidden">
+                      <img
+                        src={diploma.src}
+                        alt={diploma.title}
+                        style={{
+                          transform: "rotate(90deg)",
+                          width: "133%",
+                          height: "133%",
+                          objectFit: "cover",
+                          filter: "contrast(1.05) saturate(0.9) brightness(0.97)",
+                          transition: "transform 0.5s",
+                          flexShrink: 0,
+                        }}
+                        className="group-hover:scale-105"
+                      />
+                    </div>
+                  ) : (
                   <img
                     src={diploma.src}
                     alt={diploma.title}
-                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${diploma.rotate ? "rotate-90 scale-[1.4]" : ""}`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     style={{ filter: "contrast(1.05) saturate(0.9) brightness(0.97)" }}
                   />
+                  )
                 ) : (
                   <div className="flex flex-col items-center justify-center gap-3 p-4 text-center">
                     <div className="w-12 h-12 bg-gray-200 flex items-center justify-center">

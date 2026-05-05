@@ -139,15 +139,27 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="flex flex-col md:flex-row items-center gap-10 mb-16 max-w-5xl mx-auto"
         >
-          <h2 className="text-4xl md:text-6xl font-black tracking-wider text-white mb-2">
-            ОБО МНЕ
-          </h2>
-          <p className="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Монкина Дарья Алексеевна</p>
-          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-            Спортивный психолог с собственным опытом большого спорта. Знаю, каково это — выходить на ковёр и побеждать.
-          </p>
+          <div className="flex-shrink-0">
+            <div className="relative w-48 h-64 md:w-56 md:h-72 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+              <img
+                src="https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/e6e77425-9319-4870-88d2-59ec8844dc3d.jpg"
+                alt="Монкина Дарья Алексеевна — спортивный психолог"
+                className="w-full h-full object-cover object-top"
+                style={{ filter: "contrast(1.05) saturate(0.9)" }}
+              />
+            </div>
+          </div>
+          <div className="text-center md:text-left">
+            <h2 className="text-4xl md:text-6xl font-black tracking-wider text-white mb-2">
+              ОБО МНЕ
+            </h2>
+            <p className="text-xl md:text-2xl font-semibold text-gray-200 mb-3">Монкина Дарья Алексеевна</p>
+            <p className="text-lg md:text-xl text-gray-400 max-w-2xl">
+              Спортивный психолог с собственным опытом большого спорта. Знаю, каково это — выходить на ковёр и побеждать.
+            </p>
+          </div>
         </motion.div>
 
         {/* Tabs */}
