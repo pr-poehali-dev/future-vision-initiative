@@ -11,7 +11,7 @@ interface Diploma {
 const placeholderDiplomas: Diploma[] = [
   {
     id: 1,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/7093ef13-bd85-4502-9443-d0b319641763.jpg",
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/d30e8938-b067-4dc4-8670-7a1815634810.jpg",
     title: "Диплом о среднем профессиональном образовании. Педагог по физической культуре и спорту, 2015",
   },
   {
@@ -31,22 +31,22 @@ const placeholderDiplomas: Diploma[] = [
   },
   {
     id: 5,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/ac1b43db-6e5f-421f-9c91-7f972e0ededf.jpg",
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/f2cc8d56-a63a-47ac-b95b-a861f4a85976.jpg",
     title: "Удостоверение о повышении квалификации. Работа с травматичным опытом (ПТСР), 2023",
   },
   {
     id: 6,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/74965ba4-a9fd-47e7-855d-994736b4b923.jpg",
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/3de6c13a-b483-407f-8159-0feeb8c8bd26.jpg",
     title: "Удостоверение о повышении квалификации. Метафорические ассоциативные карты (МАК), 2022",
   },
   {
     id: 7,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/1d1ebec9-f9d1-445f-b07d-aad8e7d2b2c8.jpg",
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/73d8fe2e-a271-4a69-a02f-76213f9f2e90.jpg",
     title: "Свидетельство. Провокативная и парадоксальная психотерапия, 2025",
   },
   {
     id: 8,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/c8c6bfa1-16d4-4984-b5a1-f5917714ca60.jpg",
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/9661b697-ecf2-41ce-974a-2d97438a0d7c.jpg",
     title: "Удостоверения Мастер спорта России по самбо и дзюдо",
   },
   {
