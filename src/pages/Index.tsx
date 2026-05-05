@@ -36,23 +36,23 @@ export default function Index() {
     },
     {
       id: 3,
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/3740d9a0-2809-4328-a3ca-8ea98fd1b270.jpg",
-      alt: "Победа на соревнованиях по самбо — рука поднята",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/04bc9a56-108c-45f8-aa30-7faa5acaab59.jpg",
+      alt: "Победа RCC MMA — спортсмен с поднятой рукой",
       title: "Онлайн-курсы и тренинги",
       description:
         "Записанные курсы по ментальной устойчивости и управлению стрессом доступны в любое время. Живые воркшопы для групп — интенсивный формат с практическими техниками, которые можно применить уже на следующей тренировке.",
       layout: "left" as const,
-      objectPosition: "center center",
+      objectPosition: "38% center",
     },
     {
       id: 4,
-      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/04bc9a56-108c-45f8-aa30-7faa5acaab59.jpg",
-      alt: "Победа RCC MMA — спортсмен с поднятой рукой",
+      image: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/3db9eb37-85ac-43d7-a225-33f5f4da558e.jpg",
+      alt: "Дзюдоисты на тренировке",
       title: "Работа с тренерами и родителями",
       description:
         "8 лет я была тренером — поэтому понимаю выгорание, ответственность за чужой результат и сложность выстраивания контакта с атлетом. Также работаю с родителями детей-спортсменов: помогаю поддерживать, а не давить, быть рядом без лишней тревоги.",
       layout: "right" as const,
-      objectPosition: "30% center",
+      objectPosition: "top center",
     },
   ]
 

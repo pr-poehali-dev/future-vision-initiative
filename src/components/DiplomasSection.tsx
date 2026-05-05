@@ -12,53 +12,36 @@ interface Diploma {
 const placeholderDiplomas: Diploma[] = [
   {
     id: 1,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/d30e8938-b067-4dc4-8670-7a1815634810.jpg",
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/cf3d7e16-5ff4-4caa-88ff-6b9677b97f24.jpg",
     title: "Диплом о среднем профессиональном образовании. Педагог по физической культуре и спорту, 2015",
-    rotate: true,
   },
   {
     id: 2,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/1e040aed-7fc5-40d6-aff3-bdd0d8eea474.jpg",
-    title: "Диплом о профессиональной переподготовке. Психолог-консультант, 2023",
-    rotate: true,
-  },
-  {
-    id: 3,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/760a6efd-e6ec-4b59-b76a-e24bc9631b57.jpg",
-    title: "Диплом о профессиональной переподготовке. Спортивный психолог, 2026",
-    rotate: true,
-  },
-  {
-    id: 4,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/d9ee3048-1531-4bd2-8a1d-a6fb7ed1711f.jpg",
     title: "Диплом о профессиональной переподготовке. Психологическое консультирование в области спорта, 2024",
   },
   {
+    id: 3,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/44afdfa4-53b2-4141-8e10-a7098299bd1b.jpg",
+    title: "Удостоверение о повышении квалификации. Работа с травматичным опытом, 2023",
+  },
+  {
+    id: 4,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/90df8a01-1fff-4152-9508-41e3cf7580ab.jpg",
+    title: "Удостоверение о повышении квалификации. Метафорические ассоциативные карты (МАК), 2022",
+  },
+  {
     id: 5,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/f2cc8d56-a63a-47ac-b95b-a861f4a85976.jpg",
-    title: "Удостоверение о повышении квалификации. Работа с травматичным опытом (ПТСР), 2023",
-    rotate: true,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/2762e947-5953-4270-b03c-07cc35395ada.jpg",
+    title: "Свидетельство. Провокативная и парадоксальная психотерапия, 2025",
   },
   {
     id: 6,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/3de6c13a-b483-407f-8159-0feeb8c8bd26.jpg",
-    title: "Удостоверение о повышении квалификации. Метафорические ассоциативные карты (МАК), 2022",
-    rotate: true,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/b8ba64b3-51ca-4d74-985a-603dabf1f846.jpg",
+    title: "Удостоверения Мастер спорта России по самбо и дзюдо",
   },
   {
     id: 7,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/73d8fe2e-a271-4a69-a02f-76213f9f2e90.jpg",
-    title: "Свидетельство. Провокативная и парадоксальная психотерапия, 2025",
-    rotate: true,
-  },
-  {
-    id: 8,
-    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/9661b697-ecf2-41ce-974a-2d97438a0d7c.jpg",
-    title: "Удостоверения Мастер спорта России по самбо и дзюдо",
-    rotate: true,
-  },
-  {
-    id: 9,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/8e97102d-dfc8-4742-87d9-4697770230c8.jpg",
     title: "Сертификат. Панельная дискуссия «Женщина и спорт: особенности тренировочного процесса», 21.08.2025",
     rotate: true,
@@ -99,36 +82,18 @@ export default function DiplomasSection() {
                 className={`group relative border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md aspect-[4/3] ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
               >
                 {diploma.src ? (
-                  diploma.rotate ? (
-                    <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-                      <img
-                        src={diploma.src}
-                        alt={diploma.title}
-                        style={{
-                          transform: "rotate(90deg) scale(1.35)",
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          filter: "contrast(1.05) saturate(0.9) brightness(0.97)",
-                          transition: "transform 0.5s",
-                        }}
-                      />
-                    </div>
-                  ) : (
                   <img
                     src={diploma.src}
                     alt={diploma.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    style={{ filter: "contrast(1.05) saturate(0.9) brightness(0.97)" }}
+                    style={{ filter: "contrast(1.03) saturate(0.95) brightness(0.98)" }}
                   />
-                  )
                 ) : (
                   <div className="flex flex-col items-center justify-center gap-3 p-4 text-center">
                     <div className="w-12 h-12 bg-gray-200 flex items-center justify-center">
                       <Icon name="FileText" size={24} className="text-gray-400" fallback="FileText" />
                     </div>
                     <p className="text-xs text-gray-400 font-medium leading-snug">{diploma.title}</p>
-                    <p className="text-xs text-gray-300">Фото будет добавлено</p>
                   </div>
                 )}
 
@@ -248,7 +213,7 @@ export default function DiplomasSection() {
               exit={{ scale: 0.9 }}
               src={lightbox.src}
               alt={lightbox.title}
-              className={`object-contain ${lightbox.rotate ? "max-h-[80vw] max-w-[90vh] rotate-90" : "max-h-[90vh] max-w-[90vw]"}`}
+              className="max-h-[90vh] max-w-[90vw] object-contain"
               onClick={(e) => e.stopPropagation()}
             />
             <p className="absolute bottom-6 text-white/70 text-sm font-medium">{lightbox.title}</p>
