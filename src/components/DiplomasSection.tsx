@@ -6,6 +6,7 @@ interface Diploma {
   id: number
   src: string
   title: string
+  rotate?: boolean
 }
 
 const placeholderDiplomas: Diploma[] = [
@@ -53,6 +54,13 @@ const placeholderDiplomas: Diploma[] = [
     id: 9,
     src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/0627a732-4947-4728-97b0-6627e13cb330.jpg",
     title: "Сертификат. Панельная дискуссия «Женщина и спорт: особенности тренировочного процесса», 2025",
+    rotate: true,
+  },
+  {
+    id: 10,
+    src: "https://cdn.poehali.dev/projects/20d8378d-ee6b-44e0-9ecb-e107cfa44d02/bucket/8e97102d-dfc8-4742-87d9-4697770230c8.jpg",
+    title: "Сертификат. Панельная дискуссия «Женщина и спорт: особенности тренировочного процесса», 21.08.2025",
+    rotate: true,
   },
 ]
 
@@ -87,13 +95,14 @@ export default function DiplomasSection() {
                 transition={{ duration: 0.4, delay: index * 0.06 }}
                 viewport={{ once: true }}
                 onClick={() => diploma.src && setLightbox(diploma)}
-                className={`group relative aspect-[3/4] border-2 border-dashed border-gray-200 bg-gray-50 flex flex-col items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
+                className={`group relative border-2 border-dashed border-gray-200 bg-gray-50 flex flex-col items-center justify-center overflow-hidden transition-all duration-300 hover:border-gray-400 hover:shadow-md ${diploma.rotate ? "aspect-[4/3]" : "aspect-[3/4]"} ${diploma.src ? "cursor-zoom-in" : "cursor-default"}`}
               >
                 {diploma.src ? (
                   <img
                     src={diploma.src}
                     alt={diploma.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${diploma.rotate ? "rotate-90 scale-[1.4]" : ""}`}
+                    style={{ filter: "contrast(1.05) saturate(0.9) brightness(0.97)" }}
                   />
                 ) : (
                   <div className="flex flex-col items-center justify-center gap-3 p-4 text-center">
@@ -105,14 +114,12 @@ export default function DiplomasSection() {
                   </div>
                 )}
 
-                {/* Hover overlay for uploaded images */}
                 {diploma.src && (
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
                     <Icon name="ZoomIn" size={32} className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fallback="ZoomIn" />
                   </div>
                 )}
 
-                {/* Title overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white text-xs font-semibold leading-snug">{diploma.title}</p>
                 </div>
@@ -223,7 +230,7 @@ export default function DiplomasSection() {
               exit={{ scale: 0.9 }}
               src={lightbox.src}
               alt={lightbox.title}
-              className="max-h-[90vh] max-w-[90vw] object-contain"
+              className={`object-contain ${lightbox.rotate ? "max-h-[80vw] max-w-[90vh] rotate-90" : "max-h-[90vh] max-w-[90vw]"}`}
               onClick={(e) => e.stopPropagation()}
             />
             <p className="absolute bottom-6 text-white/70 text-sm font-medium">{lightbox.title}</p>

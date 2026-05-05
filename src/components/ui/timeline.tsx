@@ -77,8 +77,9 @@ function TimelineItem({ entry, index, scrollProgress }: TimelineItemProps) {
                   src={entry.image || "/placeholder.svg"}
                   alt={entry.alt}
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  style={{ filter: "contrast(1.08) saturate(0.85) brightness(0.95)" }}
                 />
-                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent" />
               </div>
             </div>
           </div>
